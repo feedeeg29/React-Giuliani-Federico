@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import MyNavBar from './Components/MyNavBar';
+import MyNavBar from "./Components/MyNavBar";
 
 
 export default function App() {
