@@ -3,24 +3,23 @@ import { Navbar } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
-
 export default function MyNavBar() {
     return (
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="dark" variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">Colossus-Gaming</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
+                            <Nav.Link href="#home" bg="light">Inicio</Nav.Link>
+                            <Nav.Link href="#link" >Link</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.1" >Productos</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2" >Página a Crear 1</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3" >Página a Crear 2</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">Página a crear 3</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
