@@ -1,0 +1,7 @@
+.NavBar {
+    display: flex;
+}
+
+.Cart {
+    place-content: flex-end;
+}

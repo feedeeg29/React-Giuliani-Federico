@@ -1,16 +1,14 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Container } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
+import { ToastContainer } from "react-toastify";
 import CartWidget from "./CartWidget";
-import CartIcon from "./CartWidget";
 export default function MyNavBar() {
     return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg">
-                <Container>
-                    <CartWidget />
+            <Navbar bg="light" variant="light" expand="lg">
+                <CartWidget />
+                <ToastContainer />
+                <Container className="NavBar">
                     <Navbar.Brand href="#home">Colossus-Gaming</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

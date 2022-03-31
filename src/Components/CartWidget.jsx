@@ -1,12 +1,18 @@
 import React from "react";
-import Cart from "..src/Components/Cart.png";
+import Cart from ".//Cart.png";
+import './Cart.css';
+import { toast, ToastContainer, Tost } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 export default function CartWidget() {
-
+    const notify = () => toast("Muchas Gracias, vuelva prontos");
     return (
         <>
             <>
-                <img src={Cart} alt="" />
+                <button onClick={notify}>
+                    <img src={Cart} alt="" width="50px" className="Cart" />
+                </button>
             </>
         </>
-    );
+    )
+
 }
