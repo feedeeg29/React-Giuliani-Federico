@@ -3,11 +3,14 @@ import { Navbar } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import CartWidget from "./CartWidget";
+import CartIcon from "./CartWidget";
 export default function MyNavBar() {
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Container>
+                    <CartWidget />
                     <Navbar.Brand href="#home">Colossus-Gaming</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
