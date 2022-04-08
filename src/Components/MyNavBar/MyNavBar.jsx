@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 export default function MyNavBar() {
     return (
         <>
@@ -12,10 +13,10 @@ export default function MyNavBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home" bg="light">Inicio</Nav.Link>
+                            <Link to={'/MainDiv'}> Maind</Link>
                             <Nav.Link href="#link" >Link</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" >Productos</NavDropdown.Item>
+                                <NavDropdown.Item ><Link to={'/Products'}> Inicio</Link></NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2" >Página a Crear 1</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3" >Página a Crear 2</NavDropdown.Item>
                                 <NavDropdown.Divider />

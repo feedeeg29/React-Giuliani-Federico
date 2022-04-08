@@ -29,8 +29,8 @@ export default function ItemCount({ stock }) {
 
     return (
         <>
-            <Button onClick={subsTract} variant="primary"> - </Button>
             <p>{count}</p>
+            <Button onClick={subsTract} variant="primary"> - </Button>
             <Button onClick={add} variant="success"> + </Button>
             <Button onClick={notify} variant="dark"> Comprar </Button>
             <Button onClick={reset} variant="info"> Resetear </Button>
