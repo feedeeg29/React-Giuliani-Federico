@@ -37,3 +37,19 @@ const ProductsArray = [
 },
 ];
 export default ProductsArray;
+
+const ProductsArraySextaEntrega = {
+    id: 6,
+    name: "Product 6",
+    price: 72000,
+    description: "Product 6 Description",
+    image: ' https://via.placeholder.com/300',
+    category: "Category 6",
+    stock: 20,};
+
+export const Productis =() => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(ProductsArraySextaEntrega);
+        }, 2000);
+    });}
